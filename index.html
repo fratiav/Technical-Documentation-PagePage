@@ -1,49 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical Documentation Page</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-  </head>
-  <body>
-    <nav id="navbar">
-      <header>HTML Documentation</header>
-      <ul id="navigator">
-        <li class="nav-option">
-          <a href="#Introduction_to_HTML"> Introduction to HTML</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <header id="nav-header">
+      <i class="fa-solid fa-bars fa-xl"></i>
+      <h2>JAVA DOC</h2>
+    </header>
+    <ul id="navigator">
+      <li><a href="#INTRODUCTION">INTRODUCTION</a></li>
+      <li><a href="#BASIC_SINTAX">BASIC SINTAX</a></li>
+      <li><a href="#OBJECTS_AND_CLASSES">OBJECTS AND CLASSES</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#">ULTIMA OPCION</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="INTRODUCTION">
+      <header>INTRODUCTION</header>
+      <p>
+        Java is a MUST for students and working professionals to become a
+        great Software Engineer specially when they are working in Software
+        Development Domain.
+      </p>
+      <p>
+        Java is fairly easy to learn, so if you are starting to learn any
+        programming language then Java could be your great choice. There's
+        also plenty of Java tools that make it easy for developers and
+        beginners to use. There are many other good reasons which makes Java
+        as the first choice of any programmer:
+      </p>
+      <div id="introduction-block">
+        <ul>
+          <li>Java is Open Source which means its available free of cost</li>
+          <li>Java is simple and so easy to learn</li>
+          <li>Java is much in demand and ensures high salary</li>
+          <li>Java has a large vibrant community</li>
+          <li>Java has powerful development tools</li>
+          <li>Java is platform independent</li>
+        </ul>
+        <img src="https://assets.stickpng.com/images/58480979cef1014c0b5e4901.png" alt="java-logo" />
+      </div>
+      <p>Java is guaranteed to be Write Once, Run Anywhere. Some features are:</p>
+      <ul>
+        <li><strong>Multithreaded.</strong> With Java's multithreaded feature it is possible to write programs that can
+          perform many tasks simultaneously. This design feature allows the developers to construct interactive
+          applications that can run smoothly.</li>
+        <li><strong>Interpreted.</strong> Java byte code is translated on the fly to native machine instructions and is
+          not stored anywhere. The development process is more rapid and analytical since the linking is an incremental
+          and light-weight process.</li>
+        <li><strong>High Performance.</strong> With the use of Just-In-Time compilers, Java enables high performance.
         </li>
-        <li class="nav-option">
-          <a href="#HTML_Elements_and_Tags">HTML Elements and Tags</a>
-        </li>
-        <li class="nav-option">
-          <a href="#Introduction_to_HTML">Document Structure</a>
-        </li>
-        <li class="nav-option">
-          <a href="#Introduction_to_HTML">Text Formatting</a>
-        </li>
-        <li class="nav-option"><a href="#Lists">Lists</a></li>
-        <li class="nav-option">
-          <a href="#Introduction_to_HTML">Forms and Input</a>
-        </li>
-        <li class="nav-option">
-          <a href="#Introduction_to_HTML">Links and Navigation</a>
-        </li>
-        <li class="nav-option">
-          <a href="#Introduction_to_HTML">Images and Multimedia</a>
-        </li>
-        <li class="nav-option"><a href="#Introduction_to_HTML">Tables</a></li>
-        <li class="nav-option">
-          <a href="#Introduction_to_HTML">HTML5 Semantic Elements</a>
-        </li>
-        <li class="nav-option">
-          <a href="#Introduction_to_HTML">Accessibility in HTML</a>
-        </li>
+        <li><strong>Distributed.</strong> Java is designed for the distributed environment of the internet.</li>
+        <li><strong>Dynamic.</strong> Java is considered to be more dynamic than C or C++ since it is designed to adapt
+          to an evolving environment. Java programs can carry extensive amount of run-time information that can be used
+          to verify and resolve accesses to objects on run-time.</li>
       </ul>
-    </nav>
-    <main id="main-doc">
+    </section>
+    <section class="main-section" id="BASIC_SINTAX">
+      <header>BASIC SINTAX</header>
+      <p>When we consider a Java program, it can be defined as a collection of objects that communicate via invoking
+        each other's methods. Let us now briefly look into what do class, object, methods, and instance variables mean.
+      </p>
+      <ul>
+        <li><strong>Object.</strong> Objects have states and behaviors. Example: A dog has states - color, name, breed
+          as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</li>
+        <li><strong>Class.</strong> A class can be defined as a template/blueprint that describes the behavior/state
+          that the object of its type supports.</li>
+        <li><strong>Methods.</strong> A method is basically a behavior. A class can contain many methods. It is in
+          methods where the logics are written, data is manipulated and all the actions are executed.</li>
+        <li><strong>Instance Variables.</strong> Each object has its unique set of instance variables. An object's state
+          is created by the values assigned to these instance variables.</li>
+      </ul>
+      <div class="code-example">
+        <h4>First Java Program</h4>
+        <code>
+          <pre>     public class MyFirstJavaProgram {
+
+          /* This is my first java program.
+            * This will print 'Hello World' as the output
+            */
+
+          public static void main(String []args) {
+              System.out.println("Hello World"); // prints Hello World
+          }
+        }</pre>
+          </code>
+      </div>
+      <p>About Java programs, it is very important to keep in mind the following points.</p>
+      <ul>
+        <li><strong>Case Sensitivity.</strong> Java is case sensitive, which means identifier Hello and hello would have
+          different meaning in Java.</li>
+        <li><strong>Class Names.</strong> The first letter should be in Upper Case. If several words are used to form a
+          name of the class, each inner word's first letter should be in Upper Case. (Example: <em>class
+            MyFirstJavaClass</em>)</li>
+        <li><strong>Method Names.</strong> All method names should start with a Lower Case letter. If several words are
+          used to form the name of the method, then each inner word's first letter should be in Upper Case. (Example:
+          <em>public void myMethodName()</em>)</li>
+        <li><strong>Program File Name.</strong> Name of the program file should exactly match the class name.When saving
+          the file, you should save it using the class name (Remember Java is case sensitive) and append '.java' to the
+          end of the name (if the file name and the class name do not match, your program will not compile). But please
+          make a note that in case you do not have a public class present in the file then file name can be different
+          than class name. It is also not mandatory to have a public class in the file. (Example: Assume
+          <em>'MyFirstJavaProgram'</em> is the class name. Then the file should be saved as
+          <em>'MyFirstJavaProgram.java'</em>)</em></li>
+        <li><strong>public static void main(String args[]).</strong> Java program processing starts from the main()
+          method which is a mandatory part of every Java program.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="OBJECTS_AND_CLASSES">
+      <header>OBJECTS AND CLASSES</header>
+      <p>If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these objects
+        have a state and a behavior. If we consider a dog, then its state is - name, breed, color, and the behavior is -
+        barking, wagging the tail, running.</p>
+      <p>If you compare the software object with a real-world object, they have very similar characteristics.</p>
+      <p> Software objects also have a state and a behavior. A software object's state is stored in fields and behavior
+        is shown via methods. So in software development, methods operate on the internal state of an object and the
+        object-to-object communication is done via methods.</p>
       
-    </main>
-  </body>
+      <p>A class is a blueprint from which individual objects are created.</p>
+      <div class="code-example">
+        <h4>Java Class Example</h4>
+        <code>
+                <pre>     public class Dog {
+            String breed;
+            int age;
+            String color;
+          
+            void barking() {
+            }
+          
+            void hungry() {
+            }
+          
+            void sleeping() {
+            }
+        }</pre>
+          </code>
+      </div>
+      <p>A class can contain any of the following variable types.</p>
+      <ul>
+        <li><strong>Local variables.</strong> Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.</li>
+        <li><strong>Instance variables.</strong> Instance variables are variables within a class but outside any method. These variables are initialized when the class is instantiated. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.</li>
+        <li><strong>Class variables.</strong> Class variables are variables declared within a class, outside any method, with the static keyword.</li>
+      </ul>
+      <p>A class can have any number of methods to access the value of various kinds of methods. In the above example, barking(), hungry() and sleeping() are methods.</p>
+    </section>
+    <section class="main-section" id="INTRODUCTION">
+      <header>INTRODUCTION</header>
+
+
+    </section>
+    <section class="main-section" id="INTRODUCTION">
+      <header>INTRODUCTION</header>
+
+
+    </section>
+    <section class="main-section" id="INTRODUCTION">
+      <header>INTRODUCTION</header>
+
+
+    </section>
+    <section class="main-section" id="INTRODUCTION">
+      <header>INTRODUCTION</header>
+
+
+    </section>
+    <section class="main-section" id="INTRODUCTION">
+      <header>INTRODUCTION</header>
+
+
+    </section>
+    <h3>Reference <a href="https://www.tutorialspoint.com/java/java_object_classes.htm">Java DOC</a></h3>
+  </main>
+  <footer id="metadata">
+    Technical Documentation Page (FreeCodeCamp) - Author: Francisco Ratia
+    Vargas
+  </footer>
+</body>
+
 </html>
