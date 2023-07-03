@@ -21,9 +21,9 @@
       <li><a href="#INTRODUCTION">INTRODUCTION</a></li>
       <li><a href="#BASIC_SINTAX">BASIC SINTAX</a></li>
       <li><a href="#OBJECTS_AND_CLASSES">OBJECTS AND CLASSES</a></li>
-      <li><a href="#">PRIMERA OPCION</a></li>
-      <li><a href="#">PRIMERA OPCION</a></li>
-      <li><a href="#">PRIMERA OPCION</a></li>
+      <li><a href="#CONSTRUCTORS">CONSTRUCTORS</a></li>
+      <li><a href="#BASIC_DATATYPES">BASIC DATATYPES</a></li>
+      <li><a href="#VARIABLE_TYPES">VARIABLE TYPES</a></li>
       <li><a href="#">PRIMERA OPCION</a></li>
       <li><a href="#">PRIMERA OPCION</a></li>
       <li><a href="#">PRIMERA OPCION</a></li>
@@ -35,7 +35,7 @@
   </nav>
   <main id="main-doc">
     <section class="main-section" id="INTRODUCTION">
-      <header>INTRODUCTION</header>
+      <header id="header-introduction">INTRODUCTION</header>
       <p>
         Java is a MUST for students and working professionals to become a
         great Software Engineer specially when they are working in Software
@@ -128,6 +128,7 @@
     </section>
     <section class="main-section" id="OBJECTS_AND_CLASSES">
       <header>OBJECTS AND CLASSES</header>
+      <h3>Objects</h3>
       <p>If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these objects
         have a state and a behavior. If we consider a dog, then its state is - name, breed, color, and the behavior is -
         barking, wagging the tail, running.</p>
@@ -135,7 +136,7 @@
       <p> Software objects also have a state and a behavior. A software object's state is stored in fields and behavior
         is shown via methods. So in software development, methods operate on the internal state of an object and the
         object-to-object communication is done via methods.</p>
-      
+      <h3>Classes</h3>
       <p>A class is a blueprint from which individual objects are created.</p>
       <div class="code-example">
         <h4>Java Class Example</h4>
@@ -163,19 +164,61 @@
         <li><strong>Class variables.</strong> Class variables are variables declared within a class, outside any method, with the static keyword.</li>
       </ul>
       <p>A class can have any number of methods to access the value of various kinds of methods. In the above example, barking(), hungry() and sleeping() are methods.</p>
+      <h3>Constructors</h3>
+      <p>When discussing about classes, one of the most important sub topic would be constructors. Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class.</p>
+      <p>Each time a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the same name as the class. A class can have more than one constructor.</p>
+      <div class="code-example">
+        <h4>Constructors in a Java Class</h4>
+        <code>
+            <pre>     public class Puppy {
+            public Puppy() {
+            }
+          
+            public Puppy(String name) {
+                // This constructor has one parameter, name.
+            }
+          }</pre>
+          </code>
+      </div>
+      <p><strong>Note</strong> − We have two different types of constructors. We are going to discuss constructors in detail in the subsequent chapters.</p>
+      <h3>Creating an Object</h3>
+      <p>As mentioned previously, a class provides the blueprints for objects. So basically, an object is created from a class. In Java, the new keyword is used to create new objects.</p>
+      <p>There are three steps when creating an object from a class:</p>
+      <ul>
+        <li><strong>Declaration.</strong> A variable declaration with a variable name with an object type.</li>
+        <li><strong>Instantiation.</strong> The 'new' keyword is used to create the object.</li>
+        <li><strong>Initialization.</strong> The 'new' keyword is followed by a call to a constructor. This call initializes the new object.</li>
+      </ul>
+      <div class="code-example">
+        <h4>Initialization of an Object</h4>
+        <code>
+            <pre>     public class Puppy {
+              public Puppy(String name) {
+                 // This constructor has one parameter, name.
+                 System.out.println("Passed Name is :" + name );
+              }
+           
+              public static void main(String []args) {
+                 // Following statement would create an object myPuppy
+                 Puppy myPuppy = new Puppy( "tommy" );
+              }
+           }</pre>
+          </code>
+      </div>
+      <p>If we compile and run the above program, then it will produce the result <em>"Passed Name is :tommy"</em></p>
     </section>
-    <section class="main-section" id="INTRODUCTION">
-      <header>INTRODUCTION</header>
+    <section class="main-section" id="CONSTRUCTORS">
+      <header>CONSTRUCTORS</header>
 
 
     </section>
-    <section class="main-section" id="INTRODUCTION">
-      <header>INTRODUCTION</header>
+    <section class="main-section" id="BASIC_DATATYPES">
+      <header>BASIC DATATYPES</header>
 
 
     </section>
-    <section class="main-section" id="INTRODUCTION">
-      <header>INTRODUCTION</header>
+    <section class="main-section" id="VARIABLE_TYPES">
+      <header>VARIABLE TYPES</header>
 
 
     </section>

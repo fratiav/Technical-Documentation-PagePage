@@ -135,7 +135,7 @@ body{
     line-height: 22px;
 }
 
-.main-section p{
+.main-section p, .main-section h3{
     margin-left: 10px;
 }
 
@@ -151,8 +151,18 @@ body{
     text-indent: 15px;
 }
 
+.main-section > header{
+    margin-top: 25px;
+}
+
+#header-introduction{
+    margin-top: 0px;
+}
+
+
 .main-section li{
     margin: 5px 0px;
+    cursor: pointer;
 }
 
 #introduction-block{
