@@ -133,10 +133,17 @@ body{
 
 .main-section{
     line-height: 22px;
+    width: 100%;
 }
 
-.main-section p, .main-section h3{
+.main-section h3{
+    margin-top: 20px;
     margin-left: 10px;
+    text-decoration: underline;
+}
+
+.main-section p{
+    margin-left: 25px;
 }
 
 .main-section > header{
@@ -190,4 +197,27 @@ body{
     padding: 0;
     margin: 0;
     color: #004445;
+}
+
+.main-section table{
+    width: 80%;
+    border: 2px solid #004445;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.main-section table th, .main-section table td{
+    border: 2px solid #004445;
+}
+
+.datatype{
+    width: 15%;
+    text-align: center;
+}
+
+.loop-image{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 30px;
 }
