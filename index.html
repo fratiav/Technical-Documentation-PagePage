@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <header id="nav-header">
+      <i class="fa-solid fa-bars fa-xl"></i>
+      <h2>JAVA DOC</h2>
+    </header>
+    <ul id="navigator">
+      <li><a class="nav-link" href="#INTRODUCTION">INTRODUCTION</a></li>
+      <li><a class="nav-link" href="#BASIC_SINTAX">BASIC SINTAX</a></li>
+      <li><a class="nav-link" href="#OBJECTS_AND_CLASSES">OBJECTS AND CLASSES</a></li>
+      <li><a class="nav-link" href="#CONSTRUCTORS">CONSTRUCTORS</a></li>
+      <li><a class="nav-link" href="#BASIC_DATATYPES">BASIC DATATYPES</a></li>
+      <li><a class="nav-link" href="#MODIFIERS_TYPES">MODIFIERS TYPES</a></li>
+      <li><a class="nav-link" href="#BASIC_OPERATORS">BASIC OPERATORS</a></li>
+      <li><a class="nav-link" href="#LOOP_CONTROL">LOOP CONTROL</a></li>
+      <li><a class="nav-link" href="#DECISION_MAKING">DECISION MAKING</a></li>
+      <li><a class="nav-link" href="#METHODS">METHODS</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="INTRODUCTION">
+      <header id="header-introduction">INTRODUCTION</header>
+      <p>
+        Java is a MUST for students and working professionals to become a
+        great Software Engineer specially when they are working in Software
+        Development Domain.
+      </p>
+      <p>
+        Java is fairly easy to learn, so if you are starting to learn any
+        programming language then Java could be your great choice. There's
+        also plenty of Java tools that make it easy for developers and
+        beginners to use. There are many other good reasons which makes Java
+        as the first choice of any programmer:
+      </p>
+      <div id="introduction-block">
+        <ul>
+          <li>Java is Open Source which means its available free of cost</li>
+          <li>Java is simple and so easy to learn</li>
+          <li>Java is much in demand and ensures high salary</li>
+          <li>Java has a large vibrant community</li>
+          <li>Java has powerful development tools</li>
+          <li>Java is platform independent</li>
+        </ul>
+        <img src="https://freesvg.org/img/1643312660java.png" alt="java-logo" />
+      </div>
+      <p>Java is guaranteed to be Write Once, Run Anywhere. Some features are:</p>
+      <ul>
+        <li><strong>Multithreaded.</strong> With Java's multithreaded feature it is possible to write programs
+          that can
+          perform many tasks simultaneously. This design feature allows the developers to construct
+          interactive
+          applications that can run smoothly.</li>
+        <li><strong>Interpreted.</strong> Java byte code is translated on the fly to native machine instructions
+          and is
+          not stored anywhere. The development process is more rapid and analytical since the linking is an
+          incremental
+          and light-weight process.</li>
+        <li><strong>High Performance.</strong> With the use of Just-In-Time compilers, Java enables high
+          performance.
+        </li>
+        <li><strong>Distributed.</strong> Java is designed for the distributed environment of the internet.</li>
+        <li><strong>Dynamic.</strong> Java is considered to be more dynamic than C or C++ since it is designed
+          to adapt
+          to an evolving environment. Java programs can carry extensive amount of run-time information that
+          can be used
+          to verify and resolve accesses to objects on run-time.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="BASIC_SINTAX">
+      <header>BASIC SINTAX</header>
+      <p>When we consider a Java program, it can be defined as a collection of objects that communicate via
+        invoking
+        each other's methods. Let us now briefly look into what do class, object, methods, and instance
+        variables mean.
+      </p>
+      <ul>
+        <li><strong>Object.</strong> Objects have states and behaviors. Example: A dog has states - color, name,
+          breed
+          as well as behavior such as wagging their tail, barking, eating. An object is an instance of a
+          class.</li>
+        <li><strong>Class.</strong> A class can be defined as a template/blueprint that describes the
+          behavior/state
+          that the object of its type supports.</li>
+        <li><strong>Methods.</strong> A method is basically a behavior. A class can contain many methods. It is
+          in
+          methods where the logics are written, data is manipulated and all the actions are executed.</li>
+        <li><strong>Instance Variables.</strong> Each object has its unique set of instance variables. An
+          object's state
+          is created by the values assigned to these instance variables.</li>
+      </ul>
+      <div class="code-example">
+        <h4>First Java Program</h4>
+        <code>
+          <pre>     public class MyFirstJavaProgram {
+
+          /* This is my first java program.
+            * This will print 'Hello World' as the output
+            */
+
+          public static void main(String []args) {
+              System.out.println("Hello World"); // prints Hello World
+          }
+        }</pre>
+          </code>
+      </div>
+      <p>About Java programs, it is very important to keep in mind the following points.</p>
+      <ul>
+        <li><strong>Case Sensitivity.</strong> Java is case sensitive, which means identifier Hello and hello
+          would have
+          different meaning in Java.</li>
+        <li><strong>Class Names.</strong> The first letter should be in Upper Case. If several words are used to
+          form a
+          name of the class, each inner word's first letter should be in Upper Case. (Example: <em>class
+            MyFirstJavaClass</em>)</li>
+        <li><strong>Method Names.</strong> All method names should start with a Lower Case letter. If several
+          words are
+          used to form the name of the method, then each inner word's first letter should be in Upper Case.
+          (Example:
+          <em>public void myMethodName()</em>)
+        </li>
+        <li><strong>Program File Name.</strong> Name of the program file should exactly match the class
+          name.When saving
+          the file, you should save it using the class name (Remember Java is case sensitive) and append
+          '.java' to the
+          end of the name (if the file name and the class name do not match, your program will not compile).
+          But please
+          make a note that in case you do not have a public class present in the file then file name can be
+          different
+          than class name. It is also not mandatory to have a public class in the file. (Example: Assume
+          <em>'MyFirstJavaProgram'</em> is the class name. Then the file should be saved as
+          <em>'MyFirstJavaProgram.java'</em>)</em>
+        </li>
+        <li><strong>public static void main(String args[]).</strong> Java program processing starts from the
+          main()
+          method which is a mandatory part of every Java program.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="OBJECTS_AND_CLASSES">
+      <header>OBJECTS AND CLASSES</header>
+      <h3>Objects</h3>
+      <p>If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these
+        objects
+        have a state and a behavior. If we consider a dog, then its state is - name, breed, color, and the
+        behavior is -
+        barking, wagging the tail, running.</p>
+      <p>If you compare the software object with a real-world object, they have very similar characteristics.</p>
+      <p> Software objects also have a state and a behavior. A software object's state is stored in fields and
+        behavior
+        is shown via methods. So in software development, methods operate on the internal state of an object and
+        the
+        object-to-object communication is done via methods.</p>
+      <h3>Classes</h3>
+      <p>A class is a blueprint from which individual objects are created.</p>
+      <div class="code-example">
+        <h4>Java Class Example</h4>
+        <code>
+                <pre>     public class Dog {
+            String breed;
+            int age;
+            String color;
+          
+            void barking() {
+            }
+          
+            void hungry() {
+            }
+          
+            void sleeping() {
+            }
+        }</pre>
+          </code>
+      </div>
+      <p>A class can contain any of the following variable types.</p>
+      <ul>
+        <li><strong>Local variables.</strong> Variables defined inside methods, constructors or blocks are
+          called local variables. The variable will be declared and initialized within the method and the
+          variable will be destroyed when the method has completed.</li>
+        <li><strong>Instance variables.</strong> Instance variables are variables within a class but outside any
+          method. These variables are initialized when the class is instantiated. Instance variables can be
+          accessed from inside any method, constructor or blocks of that particular class.</li>
+        <li><strong>Class variables.</strong> Class variables are variables declared within a class, outside any
+          method, with the static keyword.</li>
+      </ul>
+      <p>A class can have any number of methods to access the value of various kinds of methods. In the above
+        example, barking(), hungry() and sleeping() are methods.</p>
+      <h3>Constructors</h3>
+      <p>When discussing about classes, one of the most important sub topic would be constructors. Every class has
+        a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a
+        default constructor for that class.</p>
+      <p>Each time a new object is created, at least one constructor will be invoked. The main rule of
+        constructors is that they should have the same name as the class. A class can have more than one
+        constructor.</p>
+      <div class="code-example">
+        <h4>Constructors in a Java Class</h4>
+        <code>
+            <pre>     public class Puppy {
+            public Puppy() {
+            }
+          
+            public Puppy(String name) {
+                // This constructor has one parameter, name.
+            }
+          }</pre>
+          </code>
+      </div>
+      <p><strong>Note</strong> − We have two different types of constructors. We are going to discuss constructors
+        in detail in the subsequent chapters.</p>
+      <h3>Creating an Object</h3>
+      <p>As mentioned previously, a class provides the blueprints for objects. So basically, an object is created
+        from a class. In Java, the new keyword is used to create new objects.</p>
+      <p>There are three steps when creating an object from a class:</p>
+      <ul>
+        <li><strong>Declaration.</strong> A variable declaration with a variable name with an object type.</li>
+        <li><strong>Instantiation.</strong> The 'new' keyword is used to create the object.</li>
+        <li><strong>Initialization.</strong> The 'new' keyword is followed by a call to a constructor. This call
+          initializes the new object.</li>
+      </ul>
+      <div class="code-example">
+        <h4>Initialization of an Object</h4>
+        <code>
+            <pre>     public class Puppy {
+              public Puppy(String name) {
+                 // This constructor has one parameter, name.
+                 System.out.println("Passed Name is :" + name );
+              }
+           
+              public static void main(String []args) {
+                 // Following statement would create an object myPuppy
+                 Puppy myPuppy = new Puppy( "tommy" );
+              }
+           }</pre>
+          </code>
+      </div>
+      <p>If we compile and run the above program, then it will produce the result <em>"Passed Name is :tommy"</em>
+      </p>
+    </section>
+    <section class="main-section" id="CONSTRUCTORS">
+      <header>CONSTRUCTORS</header>
+      <p>A constructor initializes an object when it is created. It has the same name as its class and is
+        syntactically similar to a method. However, constructors have no explicit return type.</p>
+      <p>Typically, you will use a constructor to give initial values to the instance variables defined by the
+        class, or to perform any other start-up procedures required to create a fully formed object.</p>
+      <p>All classes have constructors, whether you define one or not, because Java automatically provides a
+        default constructor that initializes all member variables to zero. However, once you define your own
+        constructor, the default constructor is no longer used.</p>
+      <p>Java allows two types of constructors namely:</p>
+      <ul>
+        <li>No argument Constructors</li>
+        <li>Parameterized Constructors</li>
+      </ul>
+      <h3>No argument Constructors</h3>
+      <p>As the name specifies the no argument constructors of Java does not accept any parameters instead, using
+        these constructors the instance variables of a method will be initialized with fixed values for all
+        objects.</p>
+      <div class="code-example">
+        <h4>Example of No argument Constructor</h4>
+        <code>
+            <pre>     public class MyClass {
+            Int num;
+            MyClass() {
+                num = 100;
+            }
+        }</pre>
+          </code>
+      </div>
+      <h3>Parameterized Constructors</h3>
+      <p>Most often, you will need a constructor that accepts one or more parameters. Parameters are added to a
+        constructor in the same way that they are added to a method, just declare them inside the parentheses
+        after the constructor's name.</p>
+      <div class="code-example">
+        <h4>Example of Parameterized Constructor</h4>
+        <code>
+            <pre>     public class MyClass {
+            int x;
+            
+            // Following is the constructor
+            MyClass(int i ) {
+                x = i;
+            }
+        }</pre>
+          </code>
+      </div>
+    </section>
+    <section class="main-section" id="BASIC_DATATYPES">
+      <header>BASIC DATATYPES</header>
+      <p>Variables are nothing but reserved memory locations to store values. This means that when you create a
+        variable you reserve some space in the memory.</p>
+      <p>Based on the data type of a variable, the operating system allocates memory and decides what can be
+        stored in the reserved memory. Therefore, by assigning different data types to variables, you can store
+        integers, decimals, or characters in these variables.</p>
+      <p>There are two data types available in Java:</p>
+      <ul>
+        <li>Primitive Data Types</li>
+        <li>Reference/Object Data Types</li>
+      </ul>
+      <h3>Primitive Data Types</h3>
+      <p>There are eight primitive datatypes supported by Java. Primitive datatypes are predefined by the language and
+        named by a keyword. Let us now look into the eight primitive data types in detail.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>DataType</th>
+            <th>Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="datatype">byte</td>
+            <td class="datatype-definition">
+              <ul>
+                <li>Byte data type is an 8-bit signed two's complement integer</li>
+                <li>Minimum value is -128 (-2^7)</li>
+                <li>Maximum value is 127 (inclusive)(2^7 -1)</li>
+                <li>Default value is 0</li>
+                <li>Byte data type is used to save space in large arrays, mainly in place of integers, since a byte is
+                  four times smaller than an integer</li>
+                <li>Example: byte a = 100, byte b = -50</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="datatype">short</td>
+            <td class="datatype-definition">
+              <ul>
+                <li>Short data type is a 16-bit signed two's complement integer</li>
+                <li>Minimum value is -32,768 (-2^15)</li>
+                <li>Maximum value is 32,767 (inclusive) (2^15 -1)</li>
+                <li>Short data type can also be used to save memory as byte data type. A short is 2 times smaller than
+                  an integer</li>
+                <li>Default value is 0</li>
+                <li>Example: short s = 1000, short r = -20550</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="datatype">int</td>
+            <td class="datatype-definition">
+              <ul>
+                <li>Int data type is a 32-bit signed two's complement integer</li>
+                <li>Minimum value is - 2,147,483,648 (-2^31)</li>
+                <li>Maximum value is 2,147,483,647(inclusive) (2^31 -1)</li>
+                <li>Integer is generally used as the default data type for integral values unless there is a concern
+                  about memory</li>
+                <li>The default value is 0</li>
+                <li>Example: int a = 990, int b = -2350</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="datatype">long</td>
+            <td class="datatype-definition">
+              <ul>
+                <li>Long data type is a 64-bit signed two's complement integer</li>
+                <li>Minimum value is -9,223,372,036,854,775,808(-2^63)</li>
+                <li>Maximum value is 9,223,372,036,854,775,807 (inclusive)(2^63 -1)</li>
+                <li>This type is used when a wider range than int is needed</li>
+                <li>Default value is 0L</li>
+                <li>Example: long a = 100000L, long b = -200000L</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="datatype">double</td>
+            <td class="datatype-definition">
+              <ul>
+                <li>double data type is a double-precision 64-bit IEEE 754 floating point</li>
+                <li>This data type is generally used as the default data type for decimal values, generally the default
+                  choice</li>
+                <li>Double data type should never be used for precise values such as currency</li>
+                <li>Default value is 0.0d</li>
+                <li>Example: double d1 = 123.4</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="datatype">boolean</td>
+            <td class="datatype-definition">
+              <ul>
+                <li>boolean data type represents one bit of information</li>
+                <li>There are only two possible values: true and false</li>
+                <li>This data type is used for simple flags that track true/false conditions</li>
+                <li>This type is used when a wider range than int is needed</li>
+                <li>Default value is false</li>
+                <li>Example: boolean one = true</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="datatype">char</td>
+            <td class="datatype-definition">
+              <ul>
+                <li>char data type is a single 16-bit Unicode character</li>
+                <li>Minimum value is '\u0000' (or 0)</li>
+                <li>Maximum value is '\uffff' (or 65,535 inclusive)</li>
+                <li>Char data type is used to store any character</li>
+                <li>Example: char letterA = 'A'</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Reference Datatypes</h3>
+      <p>Reference variables are created using defined constructors of the classes. They are used to access objects.
+        These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy, etc.
+      </p>
+      <p>Class objects and various type of array variables come under reference datatype.</p>
+      <p>Default value of any reference variable is null.</p>
+      <p>A reference variable can be used to refer any object of the declared type or any compatible type.</p>
+      <p> Example: Animal animal = new Animal("giraffe");</p>
+    </section>
+    <section class="main-section" id="MODIFIERS_TYPES">
+      <header>MODIFIERS TYPES</header>
+      <p>Modifiers are keywords that you add to those definitions to change their meanings. Java language has a wide
+        variety of modifiers, including the following:</p>
+      <ul>
+        <li>Access Control Modifiers</li>
+        <li>Non-Access Modifiers</li>
+      </ul>
+      <p>To use a modifier, you include its keyword in the definition of a class, method, or variable. The modifier
+        precedes the rest of the statement, as in the following example.</p>
+      <div class="code-example">
+        <h4>Example of No argument Constructor</h4>
+        <code>
+                <pre>    <strong>public</strong> class className {
+          // ...
+        }
+        
+        <strong>private</strong> boolean myFlag;
+        <strong>static final</strong> double weeks = 9.5;
+        <strong>protected static final</strong> int BOXWIDTH = 42;
+        
+        <strong>public static</strong> void main(String[] arguments) {
+          // body of method
+        }</pre>
+              </code>
+      </div>
+      <h3>Access Control Modifiers</h3>
+      <p>Java provides a number of access modifiers to set access levels for classes, variables, methods and
+        constructors. The four access levels are:</p>
+      <ul>
+        <li>Visible to the package, the default. No modifiers are needed</li>
+        <li>Visible to the class only (private)</li>
+        <li>Visible to the world (public)</li>
+        <li>Visible to the package and all subclasses (protected)</li>
+      </ul>
+      <h3>Non-Access Modifiers</h3>
+      <p>Java provides a number of non-access modifiers to achieve many other functionality.</p>
+      <ul>
+        <li>The static modifier for creating class methods and variables</li>
+        <li>The final modifier for finalizing the implementations of classes, methods, and variables</li>
+        <li>The abstract modifier for creating abstract classes and methods</li>
+        <li>The synchronized and volatile modifiers, which are used for threads</li>
+      </ul>
+    </section>
+    <section class="main-section" id="BASIC_OPERATORS">
+      <header>BASIC OPERATORS</header>
+      <p>Java provides a rich set of operators to manipulate variables. We can divide all the Java operators into the following groups:</p>
+      <ul>
+        <li>Arithmetic Operators</li>
+        <li>Relational Operators</li>
+        <li>Bitwise Operators</li>
+        <li>Logical Operators</li>
+        <li>Assignment Operators</li>
+        <li>Misc Operators</li>
+      </ul>
+      <h3>The Arithmetic Operators</h3>
+      <p>Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra. The following table lists the arithmetic operators.</p>
+      <table style="text-align: center;">
+        <thead>
+          <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>+ (Addition)</td>
+            <td>Adds values on either side of the operator.</td>
+            <td>A + B will give 30</td>
+          </tr>
+          <tr>
+            <td>- (Subtraction)</td>
+            <td>Subtracts right-hand operand from left-hand operand.</td>
+            <td>A - B will give -10</td>
+          </tr>
+          <tr>
+            <td>* (Multiplication)</td>
+            <td>Multiplies values on either side of the operator.</td>
+            <td>A * B will give 200</td>
+          </tr>
+          <tr>
+            <td>/ (Division)</td>
+            <td>Divides left-hand operand by right-hand operand.</td>
+            <td>B / A will give 2</td>
+          </tr>
+          <tr>
+            <td>% (Modulus)</td>
+            <td>Divides left-hand operand by right-hand operand and returns remainder.</td>
+            <td>B % A will give 0</td>
+          </tr>
+          <tr>
+            <td>++ (Increment)</td>
+            <td>Increases the value of operand by 1.</td>
+            <td>B++ gives 21</td>
+          </tr>
+          <tr>
+            <td>-- (Decrement)</td>
+            <td>Decreases the value of operand by 1.</td>
+            <td>B-- gives 19</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><em>To see other basic operators, please, net to the oficial <a href="https://www.tutorialspoint.com/java/java_basic_operators.htm" target="_blank">Java Doc</a></em></p>
+    </section>
+    <section class="main-section" id="LOOP_CONTROL">
+      <header>LOOP CONTROL</header>
+      <p>There may be a situation when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.</p>
+      <img class="loop-image" src="https://www.tutorialspoint.com/java/images/loop_architecture.jpg" alt="loop-schema"/>
+      <p>Programming languages provide various control structures that allow for more complicated execution paths.</p>
+      <p>A loop statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages.</p>
+      <p>Java programming language provides the following types of loop to handle looping requirements. Click the following links to check their detail.</p>
+      <ul>
+        <li><strong>While</strong> - Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.</li>
+        <li><strong>For</strong> - Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.</li>
+        <li><strong>Do...While</strong> - Like a while statement, except that it tests the condition at the end of the loop body.</li>
+      </ul>
+      <h3>Loop Control Statements</h3>
+      <p>Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.</p>
+      <p>Java supports the following control statements. Click the following links to check their detail.</p>
+      <ul>
+        <li><strong>break</strong> - Terminates the loop or switch statement and transfers execution to the statement immediately following the loop or switch.</li>
+        <li><strong>continue</strong> - Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="DECISION_MAKING">
+      <header>DECISION MAKING</header>
+      <p>Decision making structures have one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.</p>
+      <p>Following is the general form of a typical decision making structure found in most of the programming languages:</p>
+      <img class="loop-image" src="https://www.tutorialspoint.com/java/images/decision_making.jpg" alt="decision-schema"/>
+      <p>Java programming language provides following types of decision making statements.</p>
+      <ul>
+        <li><strong>if</strong> - An if statement consists of a boolean expression followed by one or more statements.</li>
+        <li><strong>if...else</strong> - An if statement can be followed by an optional else statement, which executes when the boolean expression is false.</li>
+        <li><strong>nested if...else</strong> - You can use one if or else if statement inside another if or else if statement(s).</li>
+        <li><strong>switch</strong> - A switch statement allows a variable to be tested for equality against a list of values.</li>
+      </ul>
+      <h3>The ? : Operator</h3>
+      <p>We have covered conditional operator ? : in the previous chapter which can be used to replace if...else statements. It has the following general form:</p>
+      <div class="code-example">
+        <h4>Example of conditional operator ? :</h4>
+        <code>
+          <pre>Exp1 ? Exp2 : Exp3;</pre>
+        </code>
+      </div>
+      <p>Where Exp1, Exp2, and Exp3 are expressions. Notice the use and placement of the colon.</p>
+      <p>To determine the value of the whole expression, initially exp1 is evaluated.</p>
+      <ul>
+        <li>If the value of exp1 is true, then the value of Exp2 will be the value of the whole expression.</li>
+        <li>If the value of exp1 is false, then Exp3 is evaluated and its value becomes the value of the entire expression.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="METHODS">
+      <header>METHODS</header>
+      <p>A Java method is a collection of statements that are grouped together to perform an operation. When you call the System.out.println() method, for example, the system actually executes several statements in order to display a message on the console.</p>
+      <h3>Creating Method</h3>
+      <p>Considering the following example to explain the syntax of a method:</p>
+      <div class="code-example">
+        <h4>Method Schema Example</h4>
+        <code>
+          <pre>     public static int methodName(int a, int b) {
+            // body
+         }</pre>
+        </code>
+      </div>
+      <p>Here,</p>
+      <ul>
+        <li><strong>public static</strong> − modifier</li>
+        <li><strong>int</strong> − return type</li>
+        <li><strong>methodName</strong> − name of the method</li>
+        <li><strong>a, b</strong> − formal parameters</li>
+        <li><strong>int a, int b</strong> − list of parameters</li>
+      </ul>
+    </section>
+    <p style="text-align: center; margin-top: 50px;"><em>To see the whole documentation, please visit the Oficial Documentation of <a href="https://docs.oracle.com/en/java/" target="_blank">Java</a></em></p>
+</main>
+  <footer id="metadata">
+    Java Documentation - Author: Francisco Ratia Vargas
+  </footer>
+</body>
+
+</html>
