@@ -265,8 +265,9 @@ pre{
 }
 
 @media (orientation:landscape) and (max-width:1000px){
+    
     #navbar{
-        left: 5px;
+        left: 10px;
         width: 230px;
         height: 400px;
     }
